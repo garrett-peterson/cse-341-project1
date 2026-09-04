@@ -1,0 +1,11 @@
+### Get all contacts locally
+GET http://localhost:3000/users
+
+### Get one contact locally
+GET http://localhost:3000/users/6a997670f21f3f5d6a373ae2
+
+### Get all contacts from Render
+GET https://project1-rdz8.onrender.com/users
+
+### Get one contact from Render
+GET https://project1-rdz8.onrender.com/users/6a997670f21f3f5d6a373ae2
