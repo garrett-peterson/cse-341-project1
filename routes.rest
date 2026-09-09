@@ -2,10 +2,45 @@
 GET http://localhost:3000/users
 
 ### Get one contact locally
-GET http://localhost:3000/users/6a997670f21f3f5d6a373ae2
+GET http://localhost:3000/users/6aa16a69c6af1d07d2d09c18
 
-### Get all contacts from Render
-GET https://project1-rdz8.onrender.com/users
+### Create Contact
+POST http://localhost:3000/users HTTP/1.1
+Content-Type: application/json
 
-### Get one contact from Render
-GET https://project1-rdz8.onrender.com/users/6a997670f21f3f5d6a373ae2
+{
+    "firstName": "Frank",
+    "lastName": "White",
+    "birthday": "06/08/1985",
+    "email": "georgeR@gmail.com",
+    "favoriteColor": "Orange"
+}
+
+### PUT Contact
+PUT http://localhost:3000/users/6aa16a69c6af1d07d2d09c18
+Content-Type: application/json
+
+{
+    "firstName": "Sara",
+    "lastName": "Smith",
+    "birthday": "03/09/2000",
+    "email": "saraS@gmail.com",
+    "favoriteColor": "Blue"
+}
+
+### PUT Contact
+PUT http://localhost:3000/users/6aa16a69c6af1d07d2d09c18
+Content-Type: application/json
+
+{
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "birthday": "03/09/2000",
+    "email": "saraS@gmail.com",
+    "favoriteColor": "Blue"
+}
+
+
+### Delete Contact
+DELETE http://localhost:3000/users/6aa16d83aa7aef21b9f0bf12 HTTP/1.1
+Content-Type: application/json
